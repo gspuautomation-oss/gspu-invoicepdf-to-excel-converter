@@ -1,0 +1,6 @@
+{
+  "name": "Minimal PDF Invoice to Excel Converter",
+  "description": "Ultra-minimal local PDF invoice to Excel extraction and spreadsheet editing utility.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

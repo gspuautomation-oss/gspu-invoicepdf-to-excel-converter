@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Crimson Text', Georgia, serif;
+  --font-serif: 'Crimson Text', Georgia, serif;
+  --font-mono: 'Crimson Text', Georgia, serif;
+}
+
+@layer base {
+  html,
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font-family: 'Crimson Text', Georgia, serif !important;
+  }
+
+  body {
+    background-color: #FAFCFF;
+    color: #0F172A;
+    margin: 0;
+    padding: 0;
+  }
+
+  .font-mono-tabular {
+    font-family: 'Crimson Text', Georgia, serif !important;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* AG Grid minimal Navy & Teal refinements with Crimson Text */
+.ag-theme-quartz {
+  --ag-background-color: #FFFFFF;
+  --ag-header-background-color: #0F172A;
+  --ag-header-foreground-color: #F8FAFC;
+  --ag-border-color: #E2E8F0;
+  --ag-row-hover-color: #F0FDFA;
+  --ag-selected-row-background-color: #CCFBF1;
+  --ag-font-family: 'Crimson Text', Georgia, serif;
+  --ag-font-size: 15px;
+  --ag-cell-horizontal-padding: 12px;
+  --ag-Input-focus-border-color: #0D9488;
+}
+
+.ag-theme-quartz .ag-header-cell-label {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.ag-cell-uncertain {
+  background-color: #FEF3C7 !important;
+  color: #92400E !important;
+  font-weight: 600;
+}
+
+.ag-row-warning {
+  background-color: #FFFBEB;
+}
